@@ -399,6 +399,51 @@ footer .container {
     transform: scale(1.2) translateY(-5px);
 }
 
+/* Estilos para detalhes da pousada (botão centralizado, bloco centralizado e recuo de parágrafo) */
+#toggle-pousada {
+    display: block;
+    margin: 0.5rem auto 1rem auto; /* centraliza o botão horizontalmente */
+    padding: 10px 24px;
+    border-radius: 22px;
+    font-weight: 700;
+}
+
+#pousada-details {
+    max-width: 920px;
+    margin: 0 auto 2rem auto; /* centraliza o bloco */
+    padding: 1rem 1.25rem;
+    background: #fff; /* mantém contraste com a seção */
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+#pousada-details h4 {
+    text-align: center;
+    color: #0066cc;
+    margin-top: 1rem;
+}
+
+#pousada-details p {
+    text-align: justify; /* mantém leitura agradável em largura maior */
+    text-indent: 1.2em; /* espaço no início de cada parágrafo */
+    margin-bottom: 0.9rem;
+    color: #444;
+}
+
+@media (max-width: 600px) {
+    #pousada-details {
+        padding: 0.8rem 0.9rem;
+    }
+    #toggle-pousada {
+        padding: 9px 18px;
+    }
+}
+
+/* Espaço extra quando os detalhes estão retraídos, para separar do grid de quartos */
+#pousada-details[hidden] + .quartos-grid {
+    padding-top: 2.5rem;
+}
+
 .social-icon:hover .social-img {
     filter: brightness(1.1);
 }

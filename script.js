@@ -31,3 +31,44 @@ window.addEventListener('scroll', function() {
 window.addEventListener('load', function() {
     console.log('Bem-vindo ao Refúgio do Capitão! ⛵🏖️');
 });
+
+// Toggle para detalhes da pousada (expandir / retrair)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('toggle-pousada');
+    const details = document.getElementById('pousada-details');
+    if (!toggleBtn || !details) return;
+
+    toggleBtn.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        if (expanded) {
+            details.hidden = true;
+            this.textContent = 'Mais detalhes';
+        } else {
+            details.hidden = false;
+            this.textContent = 'Menos detalhes';
+            details.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+
+    // Toggles para cada quarto (botões 'Exibir mais informações')
+    const roomToggles = document.querySelectorAll('.room-toggle');
+    roomToggles.forEach((btn) => {
+        const detailsId = btn.getAttribute('aria-controls');
+        const detailsEl = document.getElementById(detailsId);
+        if (!detailsEl) return;
+
+        btn.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            if (expanded) {
+                detailsEl.hidden = true;
+                this.textContent = 'Exibir mais informações';
+            } else {
+                detailsEl.hidden = false;
+                this.textContent = 'Menos informações';
+                detailsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+});

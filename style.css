@@ -256,6 +256,15 @@ body {
     margin-bottom: 1rem;
 }
 
+.quarto-imagem img.quarto-img {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto 0.75rem auto;
+    border-radius: 8px;
+}
+
 .quarto-card h3 {
     color: #0066cc;
     margin: 1rem 0;

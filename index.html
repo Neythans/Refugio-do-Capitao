@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refúgio do Capitão - Pousada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">⛵ Refúgio do Capitão</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#quartos">Quartos</a></li>
+                <li><a href="#airbnb">Airbnb</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Refúgio do Capitão</h2>
+            <p>Sua experiência perfeita de descanso e aventura</p>
+            <button class="btn" onclick="document.getElementById('reserva').scrollIntoView({behavior: 'smooth'})">Fazer Reserva</button>
+        </div>
+    </header>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <div class="servico-icon">🏠</div>
+                    <h3>Aluguel de Casas</h3>
+                    <p>Aluguel de casas e pousadas em Cabo Frio e São Pedro da Aldeia com conforto e qualidade</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🚤</div>
+                    <h3>Passeio de Barco</h3>
+                    <p>Passeios de barco em Arraial do Cabo com experiências inesquecíveis no mar</p>
+                </div>
+                <div class="servico-card">
+                    <div class="servico-icon">🎉</div>
+                    <h3>Aluguel para Eventos</h3>
+                    <p>Espaço disponível para festas, casamentos, reuniões corporativas e celebrações especiais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Quartos -->
+    <section id="quartos" class="quartos">
+        <div class="container">
+            <h2>Nossos Quartos</h2>
+            
+            <!-- Pousada -->
+            <div class="localizacao-section">
+                <h3 class="localizacao-titulo">🏨 Pousada - São Pedro da Aldeia</h3>
+                <p class="localizacao-endereco">📍 R. Manoel Vitorino Carriço, 228 - Ponta do Ambrósio, São Pedro da Aldeia - RJ</p>
+                <div class="quartos-grid">
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">🛏️</div>
+                        <h4>Quarto 1 - Standard</h4>
+                        <p>Confortável e acessível</p>
+                        <ul>
+                            <li>Cama Queen Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro privativo</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 150/noite</p>
+                    </div>
+                    <div class="quarto-card featured">
+                        <div class="destaque">⭐ POPULAR</div>
+                        <div class="quarto-imagem">🏝️</div>
+                        <h4>Quarto 2 - Deluxe</h4>
+                        <p>Vista para o mar</p>
+                        <ul>
+                            <li>Cama King Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro com chuveiro</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 250/noite</p>
+                    </div>
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">👑</div>
+                        <h4>Quarto 3 - Premium</h4>
+                        <p>Luxo e exclusividade</p>
+                        <ul>
+                            <li>Cama King Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro ensuite</li>
+                            <li>Varanda privativa</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 350/noite</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casa -->
+            <div class="localizacao-section">
+                <h3 class="localizacao-titulo">🏠 Casa - Cabo Frio</h3>
+                <p class="localizacao-endereco">📍 Rua Padre Nunes, 30, Recanto das Dunas, Cabo Frio - RJ</p>
+                <div class="quartos-grid">
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">🛏️</div>
+                        <h4>Quarto 1 - Standard</h4>
+                        <p>Confortável</p>
+                        <ul>
+                            <li>Cama Queen Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro privativo</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 120/noite</p>
+                    </div>
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">🛏️</div>
+                        <h4>Quarto 2 - Standard</h4>
+                        <p>Confortável</p>
+                        <ul>
+                            <li>Cama Queen Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro privativo</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 120/noite</p>
+                    </div>
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">🏝️</div>
+                        <h4>Quarto 3 - Deluxe</h4>
+                        <p>Espaçoso</p>
+                        <ul>
+                            <li>Cama King Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro ensuite</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 180/noite</p>
+                    </div>
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">🏝️</div>
+                        <h4>Quarto 4 - Deluxe</h4>
+                        <p>Espaçoso</p>
+                        <ul>
+                            <li>Cama King Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro ensuite</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 180/noite</p>
+                    </div>
+                    <div class="quarto-card">
+                        <div class="quarto-imagem">👑</div>
+                        <h4>Quarto 5 - Premium</h4>
+                        <p>Master com suite</p>
+                        <ul>
+                            <li>Cama King Size</li>
+                            <li>Ar condicionado</li>
+                            <li>Banheiro luxuoso</li>
+                            <li>Varanda com vista</li>
+                            <li>WiFi grátis</li>
+                        </ul>
+                        <p class="preco">R$ 280/noite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Airbnb -->
+    <section id="airbnb" class="airbnb">
+        <div class="container">
+            <h2>Veja nossos Anúncios no Airbnb</h2>
+            <p class="airbnb-subtitle">Reserve diretamente pela plataforma Airbnb</p>
+            <div class="airbnb-grid">
+                <div class="airbnb-card">
+                    <div class="airbnb-logo">🏠</div>
+                    <h3>Nosso Perfil no Airbnb</h3>
+                    <p>Visite nosso perfil completo com todas as propriedades, avaliações e informações</p>
+                    <a href="https://www.airbnb.com.br/users/profile/1463144910396734642" target="_blank" class="btn-airbnb">
+                        Acessar Perfil
+                    </a>
+                </div>
+            </div>
+            <div class="airbnb-info">
+                <p>Todas as nossas propriedades estão disponíveis na plataforma Airbnb com proteção do AirCover!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Refúgio do Capitão</h3>
+                    <p><strong>🏨 Pousada:</strong> R. Manoel Vitorino Carriço, 228 - Ponta do Ambrósio, São Pedro da Aldeia - RJ</p>
+                    <p><strong>🏠 Casa:</strong> Rua Padre Nunes, 30, Recanto das Dunas, Cabo Frio - RJ</p>
+                    <p><strong>📞 Telefone:</strong> (22) 99988-3601</p>
+                    <p><strong>📧 Email:</strong> <a href="mailto:refugio.capitaocabofrio@gmail.com">refugio.capitaocabofrio@gmail.com</a></p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/refugio.capitao/" target="_blank" title="Instagram" class="social-icon">
+                            <img src="logos/instagram-logo.png" alt="Instagram" class="social-img">
+                        </a>
+                        <a href="https://www.airbnb.com.br/users/profile/1463144910396734642" target="_blank" title="Airbnb" class="social-icon">
+                            <img src="logos/airbnb-logo.png" alt="Airbnb" class="social-img">
+                        </a>
+                        <a href="https://wa.me/5522999883601" target="_blank" title="WhatsApp" class="social-icon">
+                            <img src="logos/whatsapp-logo.png" alt="WhatsApp" class="social-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Refúgio do Capitão - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
